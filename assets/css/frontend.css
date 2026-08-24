@@ -1,0 +1,426 @@
+.htfo-menu-container {
+	display: flex !important;
+	align-items: center !important;
+	gap: 8px !important;
+	margin-left: auto !important;
+	margin-right: 15px !important;
+	flex-wrap: nowrap !important;
+}
+
+.htfo-dropdown {
+	position: relative !important;
+	display: inline-block !important;
+}
+
+.htfo-drop-button {
+	display: flex !important;
+	align-items: center !important;
+	padding: 8px 14px !important;
+	border: 1px solid transparent !important;
+	border-radius: 6px !important;
+	background: transparent !important;
+	color: var(--text-color, #333) !important;
+	font: inherit !important;
+	font-size: 14px !important;
+	cursor: pointer !important;
+	white-space: nowrap !important;
+	transition: background-color 0.2s ease, border-color 0.2s ease, color 0.2s ease !important;
+}
+
+.htfo-drop-button:hover,
+.htfo-drop-button:focus-visible {
+	border-color: rgba(255, 255, 255, 0.2) !important;
+	background: rgba(255, 255, 255, 0.1) !important;
+	color: var(--primary-color, #0073aa) !important;
+	outline: none !important;
+}
+
+.htfo-drop-button i {
+	margin-right: 6px !important;
+	font-size: 16px !important;
+}
+
+.htfo-custom-icon {
+	display: inline-block !important;
+	width: 16px !important;
+	height: 16px !important;
+	margin-right: 6px !important;
+	object-fit: contain !important;
+}
+
+.htfo-sub-menu {
+	position: absolute !important;
+	top: 100% !important;
+	left: 0 !important;
+	z-index: 99999 !important;
+	display: block !important;
+	visibility: hidden !important;
+	min-width: 180px !important;
+	max-width: 250px !important;
+	margin: 8px 0 0 !important;
+	padding: 6px 0 !important;
+	border: 1px solid rgba(255, 255, 255, 0.3) !important;
+	border-radius: 8px !important;
+	background: rgba(255, 255, 255, 0.95) !important;
+	box-shadow: 0 8px 32px rgba(0, 0, 0, 0.12) !important;
+	list-style: none !important;
+	opacity: 0 !important;
+	transform: translateY(-10px) scale(0.95) !important;
+	transition: opacity 0.2s ease, transform 0.2s ease, visibility 0.2s ease !important;
+	-webkit-backdrop-filter: blur(10px) saturate(180%) !important;
+	backdrop-filter: blur(10px) saturate(180%) !important;
+}
+
+.htfo-dropdown:hover .htfo-sub-menu,
+.htfo-dropdown:focus-within .htfo-sub-menu {
+	visibility: visible !important;
+	opacity: 1 !important;
+	transform: translateY(0) scale(1) !important;
+}
+
+.htfo-sub-menu li {
+	display: block !important;
+	width: 100% !important;
+	margin: 0 !important;
+	padding: 0 !important;
+	list-style: none !important;
+}
+
+.htfo-sub-menu a {
+	display: block !important;
+	overflow: hidden !important;
+	width: 100% !important;
+	box-sizing: border-box !important;
+	padding: 10px 18px !important;
+	color: #333 !important;
+	font-size: 13px !important;
+	text-decoration: none !important;
+	text-overflow: ellipsis !important;
+	white-space: nowrap !important;
+	transition: background-color 0.2s ease, color 0.2s ease, padding 0.2s ease !important;
+}
+
+.htfo-sub-menu a:hover,
+.htfo-sub-menu a:focus-visible {
+	padding-left: 22px !important;
+	background: rgba(0, 0, 0, 0.05) !important;
+	color: var(--primary-color, #0073aa) !important;
+	outline: none !important;
+}
+
+.io-black-mode .htfo-sub-menu {
+	border-color: rgba(255, 255, 255, 0.15) !important;
+	background: rgba(30, 30, 30, 0.95) !important;
+	box-shadow: 0 8px 32px rgba(0, 0, 0, 0.3) !important;
+}
+
+.io-black-mode .htfo-sub-menu a,
+.io-black-mode .htfo-drop-button {
+	color: #e0e0e0 !important;
+}
+
+.io-black-mode .htfo-sub-menu a:hover,
+.io-black-mode .htfo-sub-menu a:focus-visible {
+	background: rgba(255, 255, 255, 0.08) !important;
+	color: var(--primary-color, #4a9eff) !important;
+}
+
+.htfo-dock-container {
+	position: fixed;
+	bottom: max(20px, env(safe-area-inset-bottom));
+	left: 50%;
+	z-index: 999;
+	display: none;
+	width: auto;
+	transform: translateX(-50%);
+}
+
+.htfo-dock {
+	display: flex;
+	align-items: center;
+	padding: 10px;
+	border: 1px solid rgba(171, 183, 236, 0.31);
+	border-radius: 20px;
+	background: rgba(255, 255, 255, 0.65);
+	box-shadow: 0 10px 20px rgba(0, 0, 0, 0.12);
+	-webkit-backdrop-filter: blur(10px);
+	backdrop-filter: blur(10px);
+}
+
+.htfo-dock-icons {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	margin: 0;
+	padding: 0;
+	list-style: none;
+}
+
+.htfo-dock-icon {
+	position: relative;
+	width: 50px;
+	height: 50px;
+	margin: 0 5px;
+	border-radius: 12px;
+	transform-origin: bottom center;
+	transition: transform 0.2s ease, margin 0.2s ease !important;
+}
+
+.htfo-dock-icon:hover,
+.htfo-dock-icon.htfo-hovered,
+.htfo-dock-icon:focus-within {
+	margin-right: 18px;
+	margin-left: 18px;
+	transform: scale(1.45) translateY(-5px);
+}
+
+.htfo-dock-icon a,
+.htfo-dock-icon button {
+	display: block;
+	width: 100%;
+	height: 100%;
+	margin: 0;
+	padding: 0;
+	border: 0;
+	border-radius: 12px;
+	background: transparent;
+	color: #333;
+	text-align: center;
+	text-decoration: none;
+	cursor: pointer;
+}
+
+.htfo-dock-icon a:focus-visible,
+.htfo-dock-icon button:focus-visible,
+.htfo-expand-dock:focus-visible {
+	outline: 2px solid #2271b1;
+	outline-offset: 2px;
+}
+
+.htfo-dock-icon img {
+	width: 100%;
+	height: 100%;
+	border-radius: 12px;
+	object-fit: cover;
+	pointer-events: none;
+}
+
+.htfo-dock-icon i {
+	color: inherit;
+	font-size: 24px;
+	line-height: 50px;
+}
+
+.htfo-dock-divider {
+	width: 1px;
+	height: 28px;
+	margin: 0 6px;
+	border-right: 2px solid #afb5ba;
+}
+
+.htfo-tooltip {
+	position: absolute;
+	top: -36px;
+	left: 50%;
+	z-index: 1000;
+	padding: 5px 8px;
+	border-radius: 5px;
+	background: #4667f0;
+	box-shadow: 0 8px 16px rgba(0, 0, 0, 0.15);
+	color: #fff;
+	font-size: 12px;
+	line-height: 1.4;
+	pointer-events: none;
+	transform: translateX(-50%) scale(0.7);
+	white-space: nowrap;
+}
+
+.htfo-tooltip::before {
+	position: absolute;
+	bottom: -3px;
+	left: 50%;
+	width: 8px;
+	height: 8px;
+	background: #4667f0;
+	content: "";
+	transform: translateX(-50%) rotate(45deg);
+}
+
+.htfo-expand-dock {
+	position: fixed;
+	bottom: max(20px, env(safe-area-inset-bottom));
+	left: 0;
+	z-index: 999;
+	display: none;
+	width: 35px;
+	height: 50px;
+	padding: 0;
+	border: 0;
+	border-radius: 0 8px 8px 0;
+	background: linear-gradient(-45deg, #274eee, #4667f0);
+	color: #fff;
+	cursor: pointer;
+}
+
+.htfo-expand-dock i {
+	font-size: 24px;
+}
+
+.htfo-modal-overlay[hidden] {
+	display: none !important;
+}
+
+.htfo-modal-overlay {
+	position: fixed;
+	inset: 0;
+	z-index: 10000;
+	display: none;
+	padding: 5vh 20px;
+	box-sizing: border-box;
+	overflow-y: auto;
+	background: rgba(0, 0, 0, 0.45);
+	-webkit-backdrop-filter: blur(3px);
+	backdrop-filter: blur(3px);
+}
+
+.htfo-modal-content,
+.htfo-delete-dialog {
+	position: relative;
+	width: min(100%, 420px);
+	margin: 5vh auto;
+	box-sizing: border-box;
+	padding: 25px;
+	border: 1px solid rgba(171, 183, 236, 0.31);
+	border-radius: 10px;
+	background: rgba(255, 255, 255, 0.96);
+	box-shadow: 0 15px 40px rgba(0, 0, 0, 0.2);
+}
+
+.htfo-modal-content h2 {
+	margin-top: 0;
+	color: #1d2327;
+	font-size: 20px;
+}
+
+.htfo-modal-content > p {
+	color: #646970;
+	font-size: 12px;
+}
+
+.htfo-modal-close {
+	position: absolute;
+	top: 12px;
+	right: 15px;
+	padding: 2px 8px;
+	border: 0;
+	background: transparent;
+	color: #646970;
+	font-size: 26px;
+	cursor: pointer;
+}
+
+#htfo-link-form label {
+	display: block;
+	margin: 14px 0 6px;
+	color: #2c3338;
+	font-size: 14px;
+}
+
+#htfo-link-form input {
+	width: 100%;
+	box-sizing: border-box;
+	padding: 10px 12px;
+	border: 1px solid #c3c4c7;
+	border-radius: 6px;
+	background: #fff;
+	color: #1d2327;
+}
+
+.htfo-form-error {
+	min-height: 1.4em;
+	color: #b32d2e;
+	font-size: 13px;
+}
+
+.htfo-submit-button,
+.htfo-delete-dialog button {
+	padding: 9px 18px;
+	border: 0;
+	border-radius: 6px;
+	background: #2271b1;
+	color: #fff;
+	cursor: pointer;
+}
+
+.htfo-delete-dialog {
+	margin-top: 20vh;
+	text-align: center;
+}
+
+.htfo-delete-dialog button + button {
+	margin-left: 8px;
+	background: #646970;
+}
+
+.io-black-mode .htfo-dock {
+	border-color: #36393b;
+	background: rgba(27, 29, 31, 0.94);
+}
+
+.io-black-mode .htfo-dock-icon a,
+.io-black-mode .htfo-dock-icon button {
+	color: #e0e0e0;
+}
+
+.io-black-mode .htfo-dock-divider {
+	border-color: rgba(255, 255, 255, 0.7);
+}
+
+.io-black-mode .htfo-modal-content,
+.io-black-mode .htfo-delete-dialog {
+	border-color: #444;
+	background: rgba(30, 30, 30, 0.98);
+	color: #eee;
+}
+
+.io-black-mode .htfo-modal-content h2,
+.io-black-mode #htfo-link-form label {
+	color: #eee;
+}
+
+.io-black-mode #htfo-link-form input {
+	border-color: #4f5459;
+	background: #1b1d1f;
+	color: #fff;
+}
+
+body.htfo-windows .htfo-dock-container,
+body.htfo-windows .htfo-expand-dock {
+	bottom: calc(max(20px, env(safe-area-inset-bottom)) + 15px);
+}
+
+@media (min-width: 980px) {
+	.htfo-dock-container {
+		display: block;
+	}
+}
+
+@media (max-width: 979px) {
+	.htfo-dock-container,
+	.htfo-expand-dock {
+		display: none !important;
+	}
+}
+
+@media (max-width: 768px) {
+	.htfo-menu-container {
+		display: none !important;
+	}
+}
+
+@media (prefers-reduced-motion: reduce) {
+	.htfo-dock-icon,
+	.htfo-sub-menu {
+		transition: none !important;
+	}
+}
