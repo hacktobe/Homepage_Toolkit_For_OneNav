@@ -60,7 +60,7 @@ Visitor-created dock links (URL, label, and optional icon URL) are saved only in
 
 == Support ==
 
-For project information and support resources, visit [一网打尽导航](https://ywdjdh.com/).
+For project information and support resources, visit the [Homepage Toolkit for OneNav plugin page](https://ywdjdh.com/homepage-toolkit-for-onenav).
 
 == Changelog ==
 
