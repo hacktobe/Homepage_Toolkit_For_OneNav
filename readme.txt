@@ -1,5 +1,5 @@
 === Homepage Toolkit for OneNav ===
-Contributors: ywdjdh
+Contributors: luckydog007
 Tags: onenav, homepage, dropdown menu, navigation, dock
 Requires at least: 5.8
 Tested up to: 7.1

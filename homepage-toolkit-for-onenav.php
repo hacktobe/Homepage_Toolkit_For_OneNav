@@ -1,7 +1,7 @@
 <?php
 /**
  * Plugin Name:       Homepage Toolkit for OneNav
- * Plugin URI:        https://ywdjdh.com/
+ * Plugin URI:        https://ywdjdh.com/homepage-toolkit-for-onenav
  * Description:       Adds configurable dropdown menus and an optional desktop dock to the OneNav theme homepage.
  * Version:           1.0.0
  * Requires at least: 5.8
