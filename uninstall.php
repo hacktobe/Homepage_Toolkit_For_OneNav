@@ -1,6 +1,6 @@
 <?php
 /**
- * Remove only settings owned by Homepage Toolkit for OneNav.
+ * Remove only settings owned by YWDJDH Homepage Toolkit for OneNav.
  *
  * @package Homepage_Toolkit_For_OneNav
  */

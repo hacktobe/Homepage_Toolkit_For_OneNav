@@ -105,7 +105,7 @@ final class HTFO_Plugin {
 
 		printf(
 			'<div class="notice notice-warning"><p>%s</p></div>',
-			esc_html__( 'Homepage Toolkit for OneNav is active, but its features are paused because the OneNav theme (or a OneNav child theme) is not active.', 'homepage-toolkit-for-onenav' )
+			esc_html__( 'YWDJDH Homepage Toolkit for OneNav is active, but its features are paused because the OneNav theme (or a OneNav child theme) is not active.', 'ywdjdh-homepage-toolkit-for-onenav' )
 		);
 	}
 
@@ -155,7 +155,7 @@ final class HTFO_Plugin {
 		if ( ! isset( $options['htfo_menus'] ) || ! is_array( $options['htfo_menus'] ) ) {
 			$options['htfo_menus'] = array(
 				array(
-					'title'     => __( 'Email', 'homepage-toolkit-for-onenav' ),
+					'title'     => __( 'Email', 'ywdjdh-homepage-toolkit-for-onenav' ),
 					'icon_type' => 'theme',
 					'icon'      => 'iconfont icon-xiaoxi',
 					'items'     => array(
@@ -163,7 +163,7 @@ final class HTFO_Plugin {
 							'title'   => 'Gmail',
 							'url'     => 'https://mail.google.com/',
 							'target'  => '_blank',
-							'tooltip' => __( 'Open Gmail', 'homepage-toolkit-for-onenav' ),
+							'tooltip' => __( 'Open Gmail', 'ywdjdh-homepage-toolkit-for-onenav' ),
 						),
 					),
 				),
@@ -179,7 +179,7 @@ final class HTFO_Plugin {
 		if ( ! isset( $options['htfo_dock_buttons'] ) || ! is_array( $options['htfo_dock_buttons'] ) ) {
 			$options['htfo_dock_buttons'] = array(
 				array(
-					'title'     => __( 'Home', 'homepage-toolkit-for-onenav' ),
+					'title'     => __( 'Home', 'ywdjdh-homepage-toolkit-for-onenav' ),
 					'url'       => home_url( '/' ),
 					'target'    => '_self',
 					'icon_type' => 'theme',
@@ -219,7 +219,7 @@ final class HTFO_Plugin {
 		$settings_link = sprintf(
 			'<a href="%1$s">%2$s</a>',
 			esc_url( admin_url( 'admin.php?page=theme_settings' ) ),
-			esc_html__( 'Settings', 'homepage-toolkit-for-onenav' )
+			esc_html__( 'Settings', 'ywdjdh-homepage-toolkit-for-onenav' )
 		);
 
 		array_unshift( $links, $settings_link );
@@ -234,10 +234,10 @@ final class HTFO_Plugin {
 			return;
 		}
 
-		$content  = '<p>' . esc_html__( 'Homepage Toolkit for OneNav stores visitor-created dock links in that visitor\'s browser localStorage. This data is not sent to WordPress or to the plugin author.', 'homepage-toolkit-for-onenav' ) . '</p>';
-		$content .= '<p>' . esc_html__( 'If a remote icon URL is explicitly configured, the visitor\'s browser requests that image directly from the specified host. That request is subject to the host\'s privacy policy.', 'homepage-toolkit-for-onenav' ) . '</p>';
+		$content  = '<p>' . esc_html__( 'YWDJDH Homepage Toolkit for OneNav stores visitor-created dock links in that visitor\'s browser localStorage. This data is not sent to WordPress or to the plugin author.', 'ywdjdh-homepage-toolkit-for-onenav' ) . '</p>';
+		$content .= '<p>' . esc_html__( 'If a remote icon URL is explicitly configured, the visitor\'s browser requests that image directly from the specified host. That request is subject to the host\'s privacy policy.', 'ywdjdh-homepage-toolkit-for-onenav' ) . '</p>';
 
-		wp_add_privacy_policy_content( 'Homepage Toolkit for OneNav', wp_kses_post( $content ) );
+		wp_add_privacy_policy_content( 'YWDJDH Homepage Toolkit for OneNav', wp_kses_post( $content ) );
 	}
 
 	/**
@@ -272,7 +272,7 @@ final class HTFO_Plugin {
 				array(
 					'storageKey'       => 'htfo_dock_custom_links',
 					'legacyStorageKey' => 'ywdjdh_dock_custom_links',
-					'invalidUrl'       => __( 'Enter a valid HTTP or HTTPS URL.', 'homepage-toolkit-for-onenav' ),
+					'invalidUrl'       => __( 'Enter a valid HTTP or HTTPS URL.', 'ywdjdh-homepage-toolkit-for-onenav' ),
 				)
 			);
 		}
@@ -306,19 +306,19 @@ final class HTFO_Plugin {
 			'htfoBackup',
 			array(
 				'ajaxUrl'       => admin_url( 'admin-ajax.php' ),
-				'loading'       => __( 'Loading current settings...', 'homepage-toolkit-for-onenav' ),
-				'loadFailed'    => __( 'Could not load settings. Try again.', 'homepage-toolkit-for-onenav' ),
-				'networkFailed' => __( 'The request failed. Check your connection and try again.', 'homepage-toolkit-for-onenav' ),
-				'copied'        => __( 'Copied!', 'homepage-toolkit-for-onenav' ),
-				'copy'          => __( 'Copy to clipboard', 'homepage-toolkit-for-onenav' ),
-				'fetching'      => __( 'Loading...', 'homepage-toolkit-for-onenav' ),
-				'download'      => __( 'Download JSON file', 'homepage-toolkit-for-onenav' ),
-				'emptyImport'   => __( 'Paste exported JSON before importing.', 'homepage-toolkit-for-onenav' ),
-				'invalidJson'   => __( 'The JSON is invalid.', 'homepage-toolkit-for-onenav' ),
-				'importing'     => __( 'Importing...', 'homepage-toolkit-for-onenav' ),
-				'imported'      => __( 'Settings imported. Reloading...', 'homepage-toolkit-for-onenav' ),
-				'importFailed'  => __( 'Import failed.', 'homepage-toolkit-for-onenav' ),
-				'import'        => __( 'Import settings', 'homepage-toolkit-for-onenav' ),
+				'loading'       => __( 'Loading current settings...', 'ywdjdh-homepage-toolkit-for-onenav' ),
+				'loadFailed'    => __( 'Could not load settings. Try again.', 'ywdjdh-homepage-toolkit-for-onenav' ),
+				'networkFailed' => __( 'The request failed. Check your connection and try again.', 'ywdjdh-homepage-toolkit-for-onenav' ),
+				'copied'        => __( 'Copied!', 'ywdjdh-homepage-toolkit-for-onenav' ),
+				'copy'          => __( 'Copy to clipboard', 'ywdjdh-homepage-toolkit-for-onenav' ),
+				'fetching'      => __( 'Loading...', 'ywdjdh-homepage-toolkit-for-onenav' ),
+				'download'      => __( 'Download JSON file', 'ywdjdh-homepage-toolkit-for-onenav' ),
+				'emptyImport'   => __( 'Paste exported JSON before importing.', 'ywdjdh-homepage-toolkit-for-onenav' ),
+				'invalidJson'   => __( 'The JSON is invalid.', 'ywdjdh-homepage-toolkit-for-onenav' ),
+				'importing'     => __( 'Importing...', 'ywdjdh-homepage-toolkit-for-onenav' ),
+				'imported'      => __( 'Settings imported. Reloading...', 'ywdjdh-homepage-toolkit-for-onenav' ),
+				'importFailed'  => __( 'Import failed.', 'ywdjdh-homepage-toolkit-for-onenav' ),
+				'import'        => __( 'Import settings', 'ywdjdh-homepage-toolkit-for-onenav' ),
 			)
 		);
 	}
@@ -330,7 +330,7 @@ final class HTFO_Plugin {
 		check_ajax_referer( 'htfo_backup', 'nonce' );
 
 		if ( ! current_user_can( 'manage_options' ) ) {
-			wp_send_json_error( __( 'You do not have permission to export these settings.', 'homepage-toolkit-for-onenav' ), 403 );
+			wp_send_json_error( __( 'You do not have permission to export these settings.', 'ywdjdh-homepage-toolkit-for-onenav' ), 403 );
 		}
 
 		$options  = get_option( self::OPTION_CONTAINER, array() );
@@ -353,21 +353,21 @@ final class HTFO_Plugin {
 		check_ajax_referer( 'htfo_backup', 'nonce' );
 
 		if ( ! current_user_can( 'manage_options' ) ) {
-			wp_send_json_error( __( 'You do not have permission to import these settings.', 'homepage-toolkit-for-onenav' ), 403 );
+			wp_send_json_error( __( 'You do not have permission to import these settings.', 'ywdjdh-homepage-toolkit-for-onenav' ), 403 );
 		}
 
 		$json = isset( $_POST['data'] ) ? sanitize_textarea_field( wp_unslash( $_POST['data'] ) ) : '';
 		$data = json_decode( (string) $json, true );
 
 		if ( ! is_array( $data ) ) {
-			wp_send_json_error( __( 'The backup is not valid JSON.', 'homepage-toolkit-for-onenav' ), 400 );
+			wp_send_json_error( __( 'The backup is not valid JSON.', 'ywdjdh-homepage-toolkit-for-onenav' ), 400 );
 		}
 
 		$settings = isset( $data['settings'] ) && is_array( $data['settings'] ) ? $data['settings'] : $data;
 		$settings = $this->sanitize_imported_settings( $settings );
 
 		if ( empty( $settings ) ) {
-			wp_send_json_error( __( 'The backup does not contain supported settings.', 'homepage-toolkit-for-onenav' ), 400 );
+			wp_send_json_error( __( 'The backup does not contain supported settings.', 'ywdjdh-homepage-toolkit-for-onenav' ), 400 );
 		}
 
 		$options = get_option( self::OPTION_CONTAINER, array() );
@@ -378,7 +378,7 @@ final class HTFO_Plugin {
 		}
 
 		update_option( self::OPTION_CONTAINER, $options );
-		wp_send_json_success( __( 'Settings imported successfully.', 'homepage-toolkit-for-onenav' ) );
+		wp_send_json_success( __( 'Settings imported successfully.', 'ywdjdh-homepage-toolkit-for-onenav' ) );
 	}
 
 	/**
@@ -508,81 +508,81 @@ final class HTFO_Plugin {
 		IOCF::createSection(
 			$prefix,
 			array(
-				'title'  => __( 'Homepage Toolkit', 'homepage-toolkit-for-onenav' ),
+				'title'  => __( 'YWDJDH Homepage Toolkit', 'ywdjdh-homepage-toolkit-for-onenav' ),
 				'icon'   => 'fas fa-list-ul',
 				'fields' => array(
 					array(
 						'id'      => 'htfo_enabled',
 						'type'    => 'switcher',
-						'title'   => __( 'Enable homepage dropdown menus', 'homepage-toolkit-for-onenav' ),
+						'title'   => __( 'Enable homepage dropdown menus', 'ywdjdh-homepage-toolkit-for-onenav' ),
 						'default' => true,
 					),
 					array(
 						'id'           => 'htfo_menus',
 						'type'         => 'group',
-						'title'        => __( 'Dropdown menus', 'homepage-toolkit-for-onenav' ),
+						'title'        => __( 'Dropdown menus', 'ywdjdh-homepage-toolkit-for-onenav' ),
 						'dependency'   => array( 'htfo_enabled', '==', 'true' ),
-						'button_title' => __( 'Add menu', 'homepage-toolkit-for-onenav' ),
+						'button_title' => __( 'Add menu', 'ywdjdh-homepage-toolkit-for-onenav' ),
 						'fields'       => array(
 							array(
 								'id'    => 'title',
 								'type'  => 'text',
-								'title' => __( 'Menu title', 'homepage-toolkit-for-onenav' ),
+								'title' => __( 'Menu title', 'ywdjdh-homepage-toolkit-for-onenav' ),
 							),
 							array(
 								'id'      => 'icon_type',
 								'type'    => 'select',
-								'title'   => __( 'Icon type', 'homepage-toolkit-for-onenav' ),
+								'title'   => __( 'Icon type', 'ywdjdh-homepage-toolkit-for-onenav' ),
 								'options' => array(
-									'theme'  => __( 'Theme icon', 'homepage-toolkit-for-onenav' ),
-									'custom' => __( 'Uploaded image', 'homepage-toolkit-for-onenav' ),
+									'theme'  => __( 'Theme icon', 'ywdjdh-homepage-toolkit-for-onenav' ),
+									'custom' => __( 'Uploaded image', 'ywdjdh-homepage-toolkit-for-onenav' ),
 								),
 								'default' => 'theme',
 							),
 							array(
 								'id'         => 'icon',
 								'type'       => 'icon',
-								'title'      => __( 'Theme icon', 'homepage-toolkit-for-onenav' ),
+								'title'      => __( 'Theme icon', 'ywdjdh-homepage-toolkit-for-onenav' ),
 								'dependency' => array( 'icon_type', '==', 'theme' ),
 								'default'    => 'iconfont icon-version',
 							),
 							array(
 								'id'         => 'icon_custom',
 								'type'       => 'upload',
-								'title'      => __( 'Custom icon', 'homepage-toolkit-for-onenav' ),
+								'title'      => __( 'Custom icon', 'ywdjdh-homepage-toolkit-for-onenav' ),
 								'dependency' => array( 'icon_type', '==', 'custom' ),
 								'library'    => array( 'image' ),
 							),
 							array(
 								'id'           => 'items',
 								'type'         => 'group',
-								'title'        => __( 'Menu links', 'homepage-toolkit-for-onenav' ),
-								'button_title' => __( 'Add link', 'homepage-toolkit-for-onenav' ),
+								'title'        => __( 'Menu links', 'ywdjdh-homepage-toolkit-for-onenav' ),
+								'button_title' => __( 'Add link', 'ywdjdh-homepage-toolkit-for-onenav' ),
 								'fields'       => array(
 									array(
 										'id'    => 'title',
 										'type'  => 'text',
-										'title' => __( 'Link label', 'homepage-toolkit-for-onenav' ),
+										'title' => __( 'Link label', 'ywdjdh-homepage-toolkit-for-onenav' ),
 									),
 									array(
 										'id'    => 'url',
 										'type'  => 'text',
-										'title' => __( 'URL', 'homepage-toolkit-for-onenav' ),
+										'title' => __( 'URL', 'ywdjdh-homepage-toolkit-for-onenav' ),
 									),
 									array(
 										'id'      => 'target',
 										'type'    => 'select',
-										'title'   => __( 'Open link in', 'homepage-toolkit-for-onenav' ),
+										'title'   => __( 'Open link in', 'ywdjdh-homepage-toolkit-for-onenav' ),
 										'options' => array(
-											'_blank' => __( 'New tab', 'homepage-toolkit-for-onenav' ),
-											'_self'  => __( 'Same tab', 'homepage-toolkit-for-onenav' ),
+											'_blank' => __( 'New tab', 'ywdjdh-homepage-toolkit-for-onenav' ),
+											'_self'  => __( 'Same tab', 'ywdjdh-homepage-toolkit-for-onenav' ),
 										),
 										'default' => '_blank',
 									),
 									array(
 										'id'    => 'tooltip',
 										'type'  => 'text',
-										'title' => __( 'Tooltip', 'homepage-toolkit-for-onenav' ),
+										'title' => __( 'Tooltip', 'ywdjdh-homepage-toolkit-for-onenav' ),
 									),
 								),
 							),
@@ -591,58 +591,58 @@ final class HTFO_Plugin {
 					array(
 						'id'      => 'htfo_dock_enabled',
 						'type'    => 'switcher',
-						'title'   => __( 'Enable desktop dock', 'homepage-toolkit-for-onenav' ),
+						'title'   => __( 'Enable desktop dock', 'ywdjdh-homepage-toolkit-for-onenav' ),
 						'default' => false,
 					),
 					array(
 						'id'           => 'htfo_dock_buttons',
 						'type'         => 'group',
-						'title'        => __( 'Dock buttons', 'homepage-toolkit-for-onenav' ),
+						'title'        => __( 'Dock buttons', 'ywdjdh-homepage-toolkit-for-onenav' ),
 						'dependency'   => array( 'htfo_dock_enabled', '==', 'true' ),
-						'button_title' => __( 'Add button', 'homepage-toolkit-for-onenav' ),
+						'button_title' => __( 'Add button', 'ywdjdh-homepage-toolkit-for-onenav' ),
 						'max'          => 10,
 						'fields'       => array(
 							array(
 								'id'    => 'title',
 								'type'  => 'text',
-								'title' => __( 'Button label', 'homepage-toolkit-for-onenav' ),
+								'title' => __( 'Button label', 'ywdjdh-homepage-toolkit-for-onenav' ),
 							),
 							array(
 								'id'    => 'url',
 								'type'  => 'text',
-								'title' => __( 'URL', 'homepage-toolkit-for-onenav' ),
+								'title' => __( 'URL', 'ywdjdh-homepage-toolkit-for-onenav' ),
 							),
 							array(
 								'id'      => 'target',
 								'type'    => 'select',
-								'title'   => __( 'Open link in', 'homepage-toolkit-for-onenav' ),
+								'title'   => __( 'Open link in', 'ywdjdh-homepage-toolkit-for-onenav' ),
 								'options' => array(
-									'_blank' => __( 'New tab', 'homepage-toolkit-for-onenav' ),
-									'_self'  => __( 'Same tab', 'homepage-toolkit-for-onenav' ),
+									'_blank' => __( 'New tab', 'ywdjdh-homepage-toolkit-for-onenav' ),
+									'_self'  => __( 'Same tab', 'ywdjdh-homepage-toolkit-for-onenav' ),
 								),
 								'default' => '_blank',
 							),
 							array(
 								'id'      => 'icon_type',
 								'type'    => 'select',
-								'title'   => __( 'Icon type', 'homepage-toolkit-for-onenav' ),
+								'title'   => __( 'Icon type', 'ywdjdh-homepage-toolkit-for-onenav' ),
 								'options' => array(
-									'theme'  => __( 'Theme icon', 'homepage-toolkit-for-onenav' ),
-									'custom' => __( 'Uploaded image', 'homepage-toolkit-for-onenav' ),
+									'theme'  => __( 'Theme icon', 'ywdjdh-homepage-toolkit-for-onenav' ),
+									'custom' => __( 'Uploaded image', 'ywdjdh-homepage-toolkit-for-onenav' ),
 								),
 								'default' => 'theme',
 							),
 							array(
 								'id'         => 'icon',
 								'type'       => 'icon',
-								'title'      => __( 'Theme icon', 'homepage-toolkit-for-onenav' ),
+								'title'      => __( 'Theme icon', 'ywdjdh-homepage-toolkit-for-onenav' ),
 								'dependency' => array( 'icon_type', '==', 'theme' ),
 								'default'    => 'iconfont icon-home',
 							),
 							array(
 								'id'         => 'icon_custom',
 								'type'       => 'upload',
-								'title'      => __( 'Custom icon', 'homepage-toolkit-for-onenav' ),
+								'title'      => __( 'Custom icon', 'ywdjdh-homepage-toolkit-for-onenav' ),
 								'dependency' => array( 'icon_type', '==', 'custom' ),
 								'library'    => array( 'image' ),
 							),
@@ -655,13 +655,13 @@ final class HTFO_Plugin {
 		IOCF::createSection(
 			$prefix,
 			array(
-				'title'  => __( 'Homepage Toolkit Backup', 'homepage-toolkit-for-onenav' ),
+				'title'  => __( 'YWDJDH Homepage Toolkit Backup', 'ywdjdh-homepage-toolkit-for-onenav' ),
 				'icon'   => 'fas fa-save',
 				'fields' => array(
 					array(
 						'type'    => 'notice',
 						'style'   => 'info',
-						'content' => __( 'This backup includes only this plugin\'s dropdown and dock settings.', 'homepage-toolkit-for-onenav' ),
+						'content' => __( 'This backup includes only this plugin\'s dropdown and dock settings.', 'ywdjdh-homepage-toolkit-for-onenav' ),
 					),
 					array(
 						'type'     => 'callback',
@@ -678,21 +678,21 @@ final class HTFO_Plugin {
 	public function render_backup_ui() {
 		?>
 		<div class="htfo-backup" data-nonce="<?php echo esc_attr( wp_create_nonce( 'htfo_backup' ) ); ?>">
-			<h4><?php esc_html_e( 'Export settings', 'homepage-toolkit-for-onenav' ); ?></h4>
-			<p class="htfo-description"><?php esc_html_e( 'The export is refreshed directly from the database.', 'homepage-toolkit-for-onenav' ); ?></p>
-			<textarea class="htfo-export-data" readonly placeholder="<?php esc_attr_e( 'Loading...', 'homepage-toolkit-for-onenav' ); ?>"></textarea>
+			<h4><?php esc_html_e( 'Export settings', 'ywdjdh-homepage-toolkit-for-onenav' ); ?></h4>
+			<p class="htfo-description"><?php esc_html_e( 'The export is refreshed directly from the database.', 'ywdjdh-homepage-toolkit-for-onenav' ); ?></p>
+			<textarea class="htfo-export-data" readonly placeholder="<?php esc_attr_e( 'Loading...', 'ywdjdh-homepage-toolkit-for-onenav' ); ?>"></textarea>
 			<p class="htfo-export-status" aria-live="polite"></p>
 			<div class="htfo-backup-actions">
-				<button type="button" class="button htfo-refresh"><?php esc_html_e( 'Refresh', 'homepage-toolkit-for-onenav' ); ?></button>
-				<button type="button" class="button button-primary htfo-copy"><?php esc_html_e( 'Copy to clipboard', 'homepage-toolkit-for-onenav' ); ?></button>
-				<button type="button" class="button htfo-download"><?php esc_html_e( 'Download JSON file', 'homepage-toolkit-for-onenav' ); ?></button>
+				<button type="button" class="button htfo-refresh"><?php esc_html_e( 'Refresh', 'ywdjdh-homepage-toolkit-for-onenav' ); ?></button>
+				<button type="button" class="button button-primary htfo-copy"><?php esc_html_e( 'Copy to clipboard', 'ywdjdh-homepage-toolkit-for-onenav' ); ?></button>
+				<button type="button" class="button htfo-download"><?php esc_html_e( 'Download JSON file', 'ywdjdh-homepage-toolkit-for-onenav' ); ?></button>
 			</div>
 			<hr>
-			<h4><?php esc_html_e( 'Import settings', 'homepage-toolkit-for-onenav' ); ?></h4>
-			<p class="htfo-description"><?php esc_html_e( 'Importing replaces only settings owned by this plugin. Legacy backups are also accepted.', 'homepage-toolkit-for-onenav' ); ?></p>
-			<textarea class="htfo-import-data" placeholder="<?php esc_attr_e( 'Paste exported JSON here...', 'homepage-toolkit-for-onenav' ); ?>"></textarea>
+			<h4><?php esc_html_e( 'Import settings', 'ywdjdh-homepage-toolkit-for-onenav' ); ?></h4>
+			<p class="htfo-description"><?php esc_html_e( 'Importing replaces only settings owned by this plugin. Legacy backups are also accepted.', 'ywdjdh-homepage-toolkit-for-onenav' ); ?></p>
+			<textarea class="htfo-import-data" placeholder="<?php esc_attr_e( 'Paste exported JSON here...', 'ywdjdh-homepage-toolkit-for-onenav' ); ?>"></textarea>
 			<div class="htfo-backup-actions">
-				<button type="button" class="button button-primary htfo-import"><?php esc_html_e( 'Import settings', 'homepage-toolkit-for-onenav' ); ?></button>
+				<button type="button" class="button button-primary htfo-import"><?php esc_html_e( 'Import settings', 'ywdjdh-homepage-toolkit-for-onenav' ); ?></button>
 			</div>
 			<div class="htfo-backup-message" aria-live="polite"></div>
 		</div>
@@ -712,7 +712,7 @@ final class HTFO_Plugin {
 			return;
 		}
 
-		echo '<nav class="htfo-menu-container" aria-label="' . esc_attr__( 'Homepage quick links', 'homepage-toolkit-for-onenav' ) . '">';
+		echo '<nav class="htfo-menu-container" aria-label="' . esc_attr__( 'Homepage quick links', 'ywdjdh-homepage-toolkit-for-onenav' ) . '">';
 		foreach ( $menus as $menu ) {
 			if ( ! is_array( $menu ) || empty( $menu['title'] ) ) {
 				continue;
@@ -800,41 +800,41 @@ final class HTFO_Plugin {
 						</li>
 					<?php endforeach; ?>
 					<li class="htfo-dock-divider" aria-hidden="true"></li>
-					<li class="htfo-dock-icon" data-title="<?php esc_attr_e( 'Add link', 'homepage-toolkit-for-onenav' ); ?>">
-						<button type="button" id="htfo-add-button" aria-haspopup="dialog"><i class="fa fa-plus" aria-hidden="true"></i><span class="screen-reader-text"><?php esc_html_e( 'Add link', 'homepage-toolkit-for-onenav' ); ?></span></button>
+					<li class="htfo-dock-icon" data-title="<?php esc_attr_e( 'Add link', 'ywdjdh-homepage-toolkit-for-onenav' ); ?>">
+						<button type="button" id="htfo-add-button" aria-haspopup="dialog"><i class="fa fa-plus" aria-hidden="true"></i><span class="screen-reader-text"><?php esc_html_e( 'Add link', 'ywdjdh-homepage-toolkit-for-onenav' ); ?></span></button>
 					</li>
-					<li class="htfo-dock-icon" data-title="<?php esc_attr_e( 'Collapse dock', 'homepage-toolkit-for-onenav' ); ?>">
-						<button type="button" id="htfo-collapse-button"><i class="fa fa-compress" aria-hidden="true"></i><span class="screen-reader-text"><?php esc_html_e( 'Collapse dock', 'homepage-toolkit-for-onenav' ); ?></span></button>
+					<li class="htfo-dock-icon" data-title="<?php esc_attr_e( 'Collapse dock', 'ywdjdh-homepage-toolkit-for-onenav' ); ?>">
+						<button type="button" id="htfo-collapse-button"><i class="fa fa-compress" aria-hidden="true"></i><span class="screen-reader-text"><?php esc_html_e( 'Collapse dock', 'ywdjdh-homepage-toolkit-for-onenav' ); ?></span></button>
 					</li>
 				</ul>
 			</div>
 		</div>
-		<button type="button" class="htfo-expand-dock" id="htfo-expand-dock" aria-label="<?php esc_attr_e( 'Expand dock', 'homepage-toolkit-for-onenav' ); ?>"><i class="fa fa-angle-right" aria-hidden="true"></i></button>
+		<button type="button" class="htfo-expand-dock" id="htfo-expand-dock" aria-label="<?php esc_attr_e( 'Expand dock', 'ywdjdh-homepage-toolkit-for-onenav' ); ?>"><i class="fa fa-angle-right" aria-hidden="true"></i></button>
 
 		<div class="htfo-modal-overlay" id="htfo-add-overlay" role="dialog" aria-modal="true" aria-labelledby="htfo-add-title" hidden>
 			<div class="htfo-modal-content">
-				<button type="button" class="htfo-modal-close" id="htfo-modal-close" aria-label="<?php esc_attr_e( 'Close', 'homepage-toolkit-for-onenav' ); ?>">&times;</button>
-				<h2 id="htfo-add-title"><?php esc_html_e( 'Add dock link', 'homepage-toolkit-for-onenav' ); ?></h2>
-				<p><?php esc_html_e( 'Custom links are stored only in this browser. Right-click a custom icon to remove it.', 'homepage-toolkit-for-onenav' ); ?></p>
+				<button type="button" class="htfo-modal-close" id="htfo-modal-close" aria-label="<?php esc_attr_e( 'Close', 'ywdjdh-homepage-toolkit-for-onenav' ); ?>">&times;</button>
+				<h2 id="htfo-add-title"><?php esc_html_e( 'Add dock link', 'ywdjdh-homepage-toolkit-for-onenav' ); ?></h2>
+				<p><?php esc_html_e( 'Custom links are stored only in this browser. Right-click a custom icon to remove it.', 'ywdjdh-homepage-toolkit-for-onenav' ); ?></p>
 				<form id="htfo-link-form">
-					<label for="htfo-add-url"><?php esc_html_e( 'Website URL', 'homepage-toolkit-for-onenav' ); ?></label>
+					<label for="htfo-add-url"><?php esc_html_e( 'Website URL', 'ywdjdh-homepage-toolkit-for-onenav' ); ?></label>
 					<input type="url" id="htfo-add-url" placeholder="https://example.com/" required>
-					<label for="htfo-add-name"><?php esc_html_e( 'Website name', 'homepage-toolkit-for-onenav' ); ?></label>
+					<label for="htfo-add-name"><?php esc_html_e( 'Website name', 'ywdjdh-homepage-toolkit-for-onenav' ); ?></label>
 					<input type="text" id="htfo-add-name" maxlength="100" required>
-					<label for="htfo-add-icon"><?php esc_html_e( 'Icon URL (optional)', 'homepage-toolkit-for-onenav' ); ?></label>
+					<label for="htfo-add-icon"><?php esc_html_e( 'Icon URL (optional)', 'ywdjdh-homepage-toolkit-for-onenav' ); ?></label>
 					<input type="url" id="htfo-add-icon" placeholder="https://example.com/icon.png">
 					<p class="htfo-form-error" aria-live="polite"></p>
-					<button type="submit" class="htfo-submit-button"><?php esc_html_e( 'Add link', 'homepage-toolkit-for-onenav' ); ?></button>
+					<button type="submit" class="htfo-submit-button"><?php esc_html_e( 'Add link', 'ywdjdh-homepage-toolkit-for-onenav' ); ?></button>
 				</form>
 			</div>
 		</div>
 
 		<div class="htfo-modal-overlay" id="htfo-delete-overlay" role="dialog" aria-modal="true" aria-labelledby="htfo-delete-title" hidden>
 			<div class="htfo-delete-dialog">
-				<p id="htfo-delete-title"><?php esc_html_e( 'Remove this custom dock link?', 'homepage-toolkit-for-onenav' ); ?></p>
+				<p id="htfo-delete-title"><?php esc_html_e( 'Remove this custom dock link?', 'ywdjdh-homepage-toolkit-for-onenav' ); ?></p>
 				<div>
-					<button type="button" id="htfo-confirm-delete"><?php esc_html_e( 'Remove', 'homepage-toolkit-for-onenav' ); ?></button>
-					<button type="button" id="htfo-cancel-delete"><?php esc_html_e( 'Cancel', 'homepage-toolkit-for-onenav' ); ?></button>
+					<button type="button" id="htfo-confirm-delete"><?php esc_html_e( 'Remove', 'ywdjdh-homepage-toolkit-for-onenav' ); ?></button>
+					<button type="button" id="htfo-cancel-delete"><?php esc_html_e( 'Cancel', 'ywdjdh-homepage-toolkit-for-onenav' ); ?></button>
 				</div>
 			</div>
 		</div>

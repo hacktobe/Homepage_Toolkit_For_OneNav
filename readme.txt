@@ -1,4 +1,4 @@
-=== Homepage Toolkit for OneNav ===
+=== YWDJDH Homepage Toolkit for OneNav ===
 Contributors: luckydog007
 Tags: onenav, homepage, dropdown menu, navigation, dock
 Requires at least: 5.8
@@ -12,7 +12,7 @@ Add configurable homepage dropdown menus and an optional desktop dock to the One
 
 == Description ==
 
-Homepage Toolkit for OneNav extends the OneNav theme with focused homepage navigation tools:
+YWDJDH Homepage Toolkit for OneNav extends the OneNav theme with focused homepage navigation tools:
 
 * Configurable dropdown menus in the desktop homepage header.
 * Theme icons or administrator-uploaded custom icons.
@@ -28,8 +28,8 @@ No tracking, telemetry, advertising, or automatic third-party requests are inclu
 == Installation ==
 
 1. Install and activate the OneNav theme or a OneNav child theme.
-2. Upload the `homepage-toolkit-for-onenav` folder to `/wp-content/plugins/`, or install the ZIP from Plugins > Add New > Upload Plugin.
-3. Activate Homepage Toolkit for OneNav.
+2. Upload the `ywdjdh-homepage-toolkit-for-onenav` folder to `/wp-content/plugins/`, or install the ZIP from Plugins > Add New > Upload Plugin.
+3. Activate YWDJDH Homepage Toolkit for OneNav.
 4. Open the OneNav Theme Settings page, then configure Homepage Toolkit.
 
 Do not activate this plugin at the same time as a private predecessor that renders the same dropdown or dock features. On first activation, compatible predecessor settings are copied when the new settings are still empty.
@@ -60,7 +60,7 @@ Visitor-created dock links (URL, label, and optional icon URL) are saved only in
 
 == Support ==
 
-For project information and support resources, visit the [Homepage Toolkit for OneNav plugin page](https://ywdjdh.com/homepage-toolkit-for-onenav).
+For project information and support resources, visit the [YWDJDH Homepage Toolkit for OneNav plugin page](https://ywdjdh.com/homepage-toolkit-for-onenav).
 
 == Changelog ==
 
